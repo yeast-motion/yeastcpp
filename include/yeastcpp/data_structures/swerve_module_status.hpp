@@ -12,6 +12,7 @@ namespace yeast_motion
         float speed;
         float theta;
 
+        SwerveModuleStatus ();
         SwerveModuleStatus (nlohmann::json json);
         nlohmann::json to_json();
         void from_json (nlohmann::json json);

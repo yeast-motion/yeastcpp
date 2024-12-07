@@ -2,6 +2,11 @@
 
 namespace yeast_motion
 {
+    MotionState::MotionState ()
+    {
+
+    }
+    
     MotionState::MotionState(nlohmann::json json)
     {
         // TODO: Implement.

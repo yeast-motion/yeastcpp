@@ -2,6 +2,11 @@
 
 namespace yeast_motion
 {
+    MotionSample::MotionSample()
+    {
+
+    }
+    
     MotionSample::MotionSample(nlohmann::json json)
     {
         // TODO: Implement.

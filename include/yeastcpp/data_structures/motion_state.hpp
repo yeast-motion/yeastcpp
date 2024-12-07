@@ -16,7 +16,7 @@ namespace yeast_motion
         MotionSample reference;
         MotionSample measuremed;
         MotionState(nlohmann::json json);
-        MotionState() {};
+        MotionState();
         nlohmann::json to_json();
         void from_json(nlohmann::json json);
     };
