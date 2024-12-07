@@ -9,8 +9,10 @@
 #include "data_structures/motion_sample.hpp"
 #include "data_structures/motion_state.hpp"
 #include "data_structures/pose2d.hpp"
+#include "data_structures/swervemodule.hpp"
 #include "data_structures/traj_point.hpp"
 #include "data_structures/trajectory.hpp"
+#include "data_structures/translation2d.hpp"
 #include "data_structures/twist2d.hpp"
 
 #include "event_triggers/event_trigger.hpp"
