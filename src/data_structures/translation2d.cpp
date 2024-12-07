@@ -1,14 +1,20 @@
-#include "yeastcpp/yeastcpp.hpp"
+#include "yeastcpp/data_structures/translation2d.hpp"
 
-using namespace yeast_motion;
-
-void Translation2D::from_json(nlohmann::json json)
+namespace yeast_motion
 {
-    return;
-}
+    Translation2D::Translation2D(nlohmann::json json)
+    {
+        // TODO: Implement.
+    }
 
-nlohmann::json Translation2D::to_json()
-{
-    nlohmann::json json;
-    return json;
+    void Translation2D::from_json(nlohmann::json json)
+    {
+        return;
+    }
+
+    nlohmann::json Translation2D::to_json(void)
+    {
+        nlohmann::json json;
+        return json;
+    }
 }

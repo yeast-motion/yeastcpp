@@ -11,6 +11,6 @@ namespace yeast_motion
     class DriveFilter
     {
         public:
-        virtual MotionCommand filter (MotionCommand command, MotionState state);
+        virtual MotionCommand filter (MotionCommand command, MotionState state) = 0;
     };
 }
