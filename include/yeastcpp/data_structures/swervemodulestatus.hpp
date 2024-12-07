@@ -2,16 +2,20 @@
 
 #include <iostream>
 
-#include <yeastcpp.hpp>
+#include "yeastcpp/yeastcpp.hpp"
 
-class SwerveModuleStatus : JSONParsable
+namespace yeast_motion
 {
-    public:
-    float speed;
-    float theta;
+    class SwerveModuleStatus : JSONParsable
+    {
+        public:
+        float speed;
+        float theta;
 
-    SwerveModuleStatus (nlohmann::json json);
-    nlohmann::json to_json();
-    void from_json (nlohmann::json json);
-};
+        SwerveModuleStatus (nlohmann::json json);
+        nlohmann::json to_json();
+        void from_json (nlohmann::json json);
+    };
+}
+
 

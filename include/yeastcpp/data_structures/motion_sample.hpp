@@ -3,7 +3,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-#include "yeastcpp.hpp"
+#include "yeastcpp/yeastcpp.hpp"
 
 namespace yeast_motion
 {

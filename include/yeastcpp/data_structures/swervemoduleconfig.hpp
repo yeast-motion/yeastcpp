@@ -2,16 +2,17 @@
 
 #include <iostream>
 
-#include "yeastcpp.hpp"
+#include "yeastcpp/yeastcpp.hpp"
 
-using namespace yeast_motion;
-
-class SwerveModuleConfig : JSONParsable
+namespace yeast_motion
 {
-    public:
-    Translation2D translation;
+    class SwerveModuleConfig : JSONParsable
+    {
+        public:
+        Translation2D translation;
 
-    SwerveModuleConfig(nlohmann::json json);
-    nlohmann::json to_json();
-    void from_json(nlohmann::json json);
-};
+        SwerveModuleConfig(nlohmann::json json);
+        nlohmann::json to_json();
+        void from_json(nlohmann::json json);
+    };
+}
