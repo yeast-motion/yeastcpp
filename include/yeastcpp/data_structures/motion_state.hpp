@@ -9,11 +9,12 @@
 
 namespace yeast_motion
 {
-
     class MotionState : JSONParsable
     {
         MotionSample reference;
         MotionSample measuremed;
         MotionState(nlohmann::json json);
+        nlohmann::json to_json();
+        void from_json(nlohmann::json json);
     };
 }
