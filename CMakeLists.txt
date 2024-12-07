@@ -24,6 +24,7 @@ add_library(yeastcpp
 # Specify include directories for the library (if needed)
 target_include_directories(yeastcpp PUBLIC
     include
+    ${ADDITIONAL_INCLUDE_PATHS}
 )
 
 # Install the library and header files
