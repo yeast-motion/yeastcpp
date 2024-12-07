@@ -15,6 +15,7 @@ namespace yeast_motion
     nlohmann::json TrajPoint::to_json(void)
     {
         // TODO: Implement.
+        return nlohmann::json();
     }
 }
 

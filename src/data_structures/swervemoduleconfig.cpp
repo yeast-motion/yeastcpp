@@ -15,5 +15,6 @@ namespace yeast_motion
     nlohmann::json SwerveModuleConfig::to_json(void)
     {
         // TODO: Implement.
+        return nlohmann::json();
     }
 }

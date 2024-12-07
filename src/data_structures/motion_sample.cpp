@@ -7,13 +7,14 @@ namespace yeast_motion
         // TODO: Implement.
     }
 
-    nlohmann::json MotionSample::to_json(void)
+    void MotionSample::from_json(nlohmann::json json)
     {
         // TODO: Implement.
     }
 
-    void MotionSample::from_json(nlohmann::json json)
+    nlohmann::json MotionSample::to_json(void)
     {
         // TODO: Implement.
+        return nlohmann::json();
     }
 }

@@ -13,7 +13,7 @@ namespace yeast_motion
         public:
         MotionSample point;
 
-        TrajPoint(nlohmann::json);
+        TrajPoint(nlohmann::json json);
         nlohmann::json to_json();
         void from_json (nlohmann::json json);
     };
