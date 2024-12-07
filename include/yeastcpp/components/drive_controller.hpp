@@ -10,6 +10,8 @@ namespace yeast_motion
 {    
     class DriveController
     {
-        virtual MotionState drive(MotionCommand command) = 0;
+        public:
+            virtual MotionState drive(MotionCommand command) = 0;
+            virtual std::vector<SwerveModuleCommand> get_command() = 0;
     };
 }
