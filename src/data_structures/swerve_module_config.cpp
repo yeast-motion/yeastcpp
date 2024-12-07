@@ -1,4 +1,4 @@
-#include "yeastcpp/data_structures/swervemoduleconfig.hpp"
+#include "yeastcpp/data_structures/swerve_module_config.hpp"
 
 namespace yeast_motion
 {

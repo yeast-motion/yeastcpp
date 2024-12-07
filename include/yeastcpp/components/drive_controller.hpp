@@ -5,11 +5,11 @@
 
 #include "yeastcpp/data_structures/motion_command.hpp"
 #include "yeastcpp/data_structures/motion_state.hpp"
-#include "yeastcpp/data_structures/swervemodulecommand.hpp"
-#include "yeastcpp/data_structures/swervemodulestatus.hpp"
+#include "yeastcpp/data_structures/swerve_module_command.hpp"
+#include "yeastcpp/data_structures/swerve_module_status.hpp"
 
 namespace yeast_motion
-{    
+{
     class DriveController
     {
         public:
