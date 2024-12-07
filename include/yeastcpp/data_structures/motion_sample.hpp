@@ -1,9 +1,10 @@
 #pragma once
 
 #include <iostream>
-#include <nlohmann/json.hpp>
 
-#include "yeastcpp/yeastcpp.hpp"
+#include "yeastcpp/data_structures/pose2d.hpp"
+#include "yeastcpp/data_structures/twist2d.hpp"
+#include "yeastcpp/json_parsable.hpp"
 
 namespace yeast_motion
 {

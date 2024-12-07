@@ -2,7 +2,8 @@
 
 #include <iostream>
 
-#include "yeastcpp/yeastcpp.hpp"
+#include "yeastcpp/data_structures/translation2d.hpp"
+#include "yeastcpp/json_parsable.hpp"
 
 namespace yeast_motion
 {

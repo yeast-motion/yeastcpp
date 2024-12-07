@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "yeastcpp/yeastcpp.hpp"
+#include "yeastcpp/json_parsable.hpp"
 
 namespace yeast_motion
 {
@@ -12,6 +12,7 @@ namespace yeast_motion
             float y = 0.0;
             float theta = 0.0;
 
+            Translation2D() {}
             Translation2D(nlohmann::json json);
             nlohmann::json to_json();
             void from_json(nlohmann::json json);
