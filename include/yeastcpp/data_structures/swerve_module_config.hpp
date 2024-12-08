@@ -12,6 +12,7 @@ namespace yeast_motion
         public:
         Translation2D translation;
 
+        SwerveModuleConfig();
         SwerveModuleConfig(nlohmann::json json);
         nlohmann::json to_json();
         void from_json(nlohmann::json json);

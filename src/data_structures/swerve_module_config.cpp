@@ -2,6 +2,11 @@
 
 namespace yeast_motion
 {
+    SwerveModuleConfig::SwerveModuleConfig()
+    {
+
+    }
+
     SwerveModuleConfig::SwerveModuleConfig(nlohmann::json json)
     {
         // TODO: Implement.
