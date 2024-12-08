@@ -9,8 +9,9 @@ namespace yeast_motion
     class SwerveModuleStatus : JSONParsable
     {
         public:
-        float speed;
-        float theta;
+        float speed = 0.0;
+        float theta = 0.0;
+        float position = 0.0;
 
         SwerveModuleStatus ();
         SwerveModuleStatus (nlohmann::json json);
