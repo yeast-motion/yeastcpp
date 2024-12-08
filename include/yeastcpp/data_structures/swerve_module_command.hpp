@@ -6,7 +6,7 @@
 
 namespace yeast_motion
 {
-    class SwerveModuleCommand : JSONParsable
+    class SwerveModuleCommand : public JSONParsable
     {
         public:
         float speed = 0.0;
