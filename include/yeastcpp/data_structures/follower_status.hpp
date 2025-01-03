@@ -12,5 +12,14 @@ namespace yeast_motion
         public:
         
         FollowerStatus(nlohmann::json json);
+        
+        void from_json(nlohmann::json json)
+        {
+            return;
+        }
+
+        nlohmann::json to_json(void){
+            return nlohmann::json();
+        }
     };
 }

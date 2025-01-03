@@ -14,5 +14,14 @@ namespace yeast_motion
         std::vector<TrajPoint> trajectory_points;
 
         Trajectory(nlohmann::json json);
+
+        void from_json(nlohmann::json json)
+        {
+            return;
+        }
+        nlohmann::json to_json(void)
+        {
+            return nlohmann::json();
+        }
     };
 }
