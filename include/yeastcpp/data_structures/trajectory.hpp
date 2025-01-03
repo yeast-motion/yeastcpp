@@ -13,7 +13,12 @@ namespace yeast_motion
         public:
         nlohmann::json trajectory;
 
-        Trajectory(nlohmann::json json);
+        Trajectory() {}
+
+        Trajectory(nlohmann::json json)
+        {
+            trajectory = json;
+        }
 
         void from_json(nlohmann::json json)
         {
