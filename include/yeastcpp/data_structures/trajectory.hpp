@@ -11,18 +11,17 @@ namespace yeast_motion
     class Trajectory : JSONParsable
     {
         public:
-        std::vector<TrajPoint> trajectory_points;
+        nlohmann::json trajectory;
 
         Trajectory(nlohmann::json json);
 
         void from_json(nlohmann::json json)
         {
-            (void)json;
-            return;
+            trajectory = json;
         }
         nlohmann::json to_json(void)
         {
-            return nlohmann::json();
+            return this->trajectory;
         }
     };
 }
