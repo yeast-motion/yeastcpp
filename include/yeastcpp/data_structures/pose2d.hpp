@@ -11,5 +11,6 @@ namespace yeast_motion
     {
         public:
             Translation2D translation;
+            Rotation2D rotation;
     };
 }
