@@ -5,5 +5,6 @@ namespace yeast_motion
     Trajectory::Trajectory(nlohmann::json json)
     {
         // TODO: Implement.
+        (void)json;
     }
 }

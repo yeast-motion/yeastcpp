@@ -17,6 +17,7 @@ namespace yeast_motion
 
         void from_json(nlohmann::json json)
         {
+            (void)json;
             return;
         }
         nlohmann::json to_json(void)
