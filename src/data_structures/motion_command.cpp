@@ -15,6 +15,12 @@ namespace yeast_motion
     nlohmann::json MotionCommand::to_json(void)
     {
         // TODO: Implement.
-        return nlohmann::json();
+        nlohmann::json output;
+        nlohmann::json velocity;
+        velocity["x"] = this->velocity.x;
+        velocity["y"] = this->velocity.y;
+        velocity["omega"] = this->velocity.omega;
+        output["velocity"] = velocity;
+        return output;
     }
 }
