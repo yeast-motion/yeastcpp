@@ -2,9 +2,8 @@
 
 namespace yeast_motion
 {
-    FollowerStatus::FollowerStatus(nlohmann::json json)
+    FollowerStatus::FollowerStatus()
     {
-        // TODO: Implement.
-        (void)json;
+
     };
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 #include <nlohmann/json.hpp>
 
 #include <yeastcpp/json_parsable.hpp>
@@ -10,9 +11,10 @@ namespace yeast_motion
     class FollowerStatus : JSONParsable
     {
         public:
-        
-        FollowerStatus(nlohmann::json json);
-        
+        std::vector<std::string> passed_commands;
+
+        FollowerStatus();
+
         void from_json(nlohmann::json json)
         {
             (void)json;
