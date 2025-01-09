@@ -12,6 +12,7 @@ namespace yeast_motion
     {
         public:
         std::vector<std::string> passed_commands;
+        bool finished = false;
 
         FollowerStatus();
 
