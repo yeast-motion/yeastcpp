@@ -15,6 +15,9 @@ namespace yeast_motion
     nlohmann::json Translation2D::to_json(void)
     {
         nlohmann::json json;
+        json["x"] = x;
+        json["y"] = y;
+        json["theta"] = theta;
         return json;
     }
 }
