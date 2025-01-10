@@ -15,16 +15,8 @@ namespace yeast_motion
         bool finished = false;
 
         FollowerStatus();
-
-        void from_json(nlohmann::json json)
-        {
-            (void)json;
-            // TODO: Fix Mike Todd (Impossible task)
-            return;
-        }
-
-        nlohmann::json to_json(void){
-            return nlohmann::json();
-        }
+        FollowerStatus(nlohmann::json json);
+        void from_json(nlohmann::json json);
+        nlohmann::json to_json(void);
     };
 }
