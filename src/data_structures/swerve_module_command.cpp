@@ -6,7 +6,7 @@ namespace yeast_motion
     {
 
     }
-    
+
     SwerveModuleCommand::SwerveModuleCommand(nlohmann::json json)
     {
         // TODO: Implement.
@@ -19,7 +19,9 @@ namespace yeast_motion
 
     nlohmann::json SwerveModuleCommand::to_json(void)
     {
-        // TODO: Implement.
-        return nlohmann::json();
+        nlohmann::json object;
+        object["speed"] = speed;
+        object["theta"] = theta;
+        return object;
     }
 }
