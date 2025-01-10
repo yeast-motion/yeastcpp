@@ -4,19 +4,18 @@ namespace yeast_motion
 {
     TrajPoint::TrajPoint(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->from_json(json);
     }
 
     void TrajPoint::from_json(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->point = MotionSample(json["point"]);
     }
 
     nlohmann::json TrajPoint::to_json(void)
     {
-        // TODO: Implement.
-        return nlohmann::json();
+        nlohmann::json object;
+        object["point"] = point.to_json();
+        return object;
     }
 }
-
-
