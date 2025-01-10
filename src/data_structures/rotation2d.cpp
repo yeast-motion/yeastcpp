@@ -2,9 +2,14 @@
 
 namespace yeast_motion
 {
+    Rotation2D::Rotation2D(nlohmann::json json)
+    {
+        this->from_json(json);
+    }
+
     void Rotation2D::from_json(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->theta = json["theta"];
     }
 
     nlohmann::json Rotation2D::to_json(void)

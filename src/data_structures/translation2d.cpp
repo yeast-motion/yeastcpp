@@ -4,12 +4,14 @@ namespace yeast_motion
 {
     Translation2D::Translation2D(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->from_json(json);
     }
 
     void Translation2D::from_json(nlohmann::json json)
     {
-        return;
+        this->x = json["x"];
+        this->y = json["y"];
+        this->theta = json["theta"];
     }
 
     nlohmann::json Translation2D::to_json(void)

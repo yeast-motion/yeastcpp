@@ -9,12 +9,17 @@ namespace yeast_motion
 
     MotionSample::MotionSample(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->from_json(json);
     }
 
     void MotionSample::from_json(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->pose = Pose2D(json["pose"]);
+        this->pose_valid = json["pose_valid"];
+        this->velocity = Twist2D(json["velocity"]);
+        this->velocity_valid = json["velocity_valid"];
+        this->acceleration = Twist2D(json["acceleration"]);
+        this->acceleration_valid = json["acceleration_valid"];
     }
 
     nlohmann::json MotionSample::to_json(void)
