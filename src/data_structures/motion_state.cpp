@@ -19,7 +19,9 @@ namespace yeast_motion
 
     nlohmann::json MotionState::to_json(void)
     {
-        // TODO: Implement.
-        return nlohmann::json();
+        nlohmann::json object;
+        object["measurement"] = measurement.to_json();
+        object["reference"] = reference.to_json();
+        return object;
     }
 }
