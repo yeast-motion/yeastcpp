@@ -10,7 +10,6 @@ namespace yeast_motion
         public:
             float x = 0.0;
             float y = 0.0;
-            float theta = 0.0;
 
             Translation2D() {}
             Translation2D(nlohmann::json json);

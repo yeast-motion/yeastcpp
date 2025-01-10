@@ -11,7 +11,6 @@ namespace yeast_motion
     {
         this->x = json["x"];
         this->y = json["y"];
-        this->theta = json["theta"];
     }
 
     nlohmann::json Translation2D::to_json(void)
@@ -19,7 +18,6 @@ namespace yeast_motion
         nlohmann::json json;
         json["x"] = x;
         json["y"] = y;
-        json["theta"] = theta;
         return json;
     }
 }
