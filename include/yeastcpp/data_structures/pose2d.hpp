@@ -7,10 +7,12 @@
 
 namespace yeast_motion
 {
-    class Pose2D
+    class Pose2D : JSONParsable
     {
         public:
             Translation2D translation;
             Rotation2D rotation;
+            nlohmann::json to_json();
+            void from_json (nlohmann::json json);
     };
 }
