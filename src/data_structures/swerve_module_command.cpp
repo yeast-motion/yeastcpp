@@ -9,12 +9,13 @@ namespace yeast_motion
 
     SwerveModuleCommand::SwerveModuleCommand(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->from_json(json);
     }
 
     void SwerveModuleCommand::from_json(nlohmann::json json)
     {
-        // TODO: Implement.
+        this->speed = json["speed"];
+        this->theta = json["theta"];
     }
 
     nlohmann::json SwerveModuleCommand::to_json(void)

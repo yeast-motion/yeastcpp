@@ -4,7 +4,9 @@ namespace yeast_motion
 {
     MotionSample::MotionSample()
     {
-
+        this->pose_valid = false;
+        this->velocity_valid = false;
+        this->acceleration_valid = false;
     }
 
     MotionSample::MotionSample(nlohmann::json json)

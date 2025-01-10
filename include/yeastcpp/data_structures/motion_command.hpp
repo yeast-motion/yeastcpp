@@ -16,7 +16,7 @@ namespace yeast_motion
             bool acceleration_valid;
             Twist2D acceleration;
 
-            MotionCommand() {};
+            MotionCommand();
             MotionCommand(nlohmann::json json);
             nlohmann::json to_json ();
             void from_json(nlohmann::json json);
