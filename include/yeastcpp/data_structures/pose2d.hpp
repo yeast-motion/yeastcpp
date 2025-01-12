@@ -12,7 +12,7 @@ namespace yeast_motion
         public:
             Translation2D translation;
             Rotation2D rotation;
-            Pose2D() {};
+            Pose2D();
             Pose2D(nlohmann::json json);
             nlohmann::json to_json();
             void from_json (nlohmann::json json);

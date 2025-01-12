@@ -2,6 +2,11 @@
 
 namespace yeast_motion
 {
+    Translation2D::Translation2D()
+    {
+
+    }
+
     Translation2D::Translation2D(nlohmann::json json)
     {
         this->from_json(json);

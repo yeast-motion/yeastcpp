@@ -4,7 +4,7 @@ namespace yeast_motion
 {
     FollowerStatus::FollowerStatus()
     {
-
+        this->finished = false;
     }
 
     FollowerStatus::FollowerStatus(nlohmann::json json)

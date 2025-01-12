@@ -15,19 +15,19 @@ namespace yeast_motion
 
     void MotionCommand::from_json(nlohmann::json json)
     {
-        this->velocity.x = json["velocity"]["x"];
-        this->velocity.y = json["velocity"]["y"];
-        this->velocity.omega = json["velocity"]["omega"];
+        this->velocity_valid = json["velocity_valid"];
+        this->acceleration_valid = json["acceleration_valid"];
+        this->acceleration.from_json(json["acceleration"]);
+        this->velocity.from_json(json["velocity"]);
     }
 
     nlohmann::json MotionCommand::to_json(void)
     {
         nlohmann::json output;
-        nlohmann::json velocity;
-        velocity["x"] = this->velocity.x;
-        velocity["y"] = this->velocity.y;
-        velocity["omega"] = this->velocity.omega;
-        output["velocity"] = velocity;
+        output["velocity_valid"] = this->velocity_valid;
+        output["acceleration_valid"] = this->acceleration_valid;
+        output["acceleration"] = this->acceleration.to_json();
+        output["velocity"] = this->velocity.to_json();
         return output;
     }
 }

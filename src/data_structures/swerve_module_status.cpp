@@ -4,7 +4,7 @@ namespace yeast_motion
 {
     SwerveModuleStatus::SwerveModuleStatus()
     {
-        // TODO: Implement.
+
     }
 
     SwerveModuleStatus::SwerveModuleStatus(nlohmann::json json)

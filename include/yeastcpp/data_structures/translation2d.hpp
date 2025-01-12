@@ -11,7 +11,7 @@ namespace yeast_motion
             float x = 0.0;
             float y = 0.0;
 
-            Translation2D() {}
+            Translation2D();
             Translation2D(nlohmann::json json);
             nlohmann::json to_json();
             void from_json(nlohmann::json json);

@@ -2,6 +2,11 @@
 
 namespace yeast_motion
 {
+    Twist2D::Twist2D()
+    {
+
+    }
+
     Twist2D::Twist2D(nlohmann::json json)
     {
         this->from_json(json);

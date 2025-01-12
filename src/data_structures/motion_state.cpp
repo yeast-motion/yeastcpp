@@ -6,7 +6,7 @@ namespace yeast_motion
     {
 
     }
-    
+
     MotionState::MotionState(nlohmann::json json)
     {
         this->from_json(json);
@@ -14,8 +14,8 @@ namespace yeast_motion
 
     void MotionState::from_json(nlohmann::json json)
     {
-        this->measurement = MotionSample(json["measurement"]);
-        this->reference = MotionSample(json["reference"]);
+        this->measurement.from_json(json["measurement"]);
+        this->reference.from_json(json["reference"]);
     }
 
     nlohmann::json MotionState::to_json(void)
