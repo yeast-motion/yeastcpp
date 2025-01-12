@@ -6,8 +6,6 @@
 #include "data_structures/twist2d.hpp"
 #include "data_structures/translation2d.hpp"
 
-#include "data_structures/characterization.hpp"
-#include "data_structures/follower_events.hpp"
 #include "data_structures/follower_status.hpp"
 #include "data_structures/motion_command.hpp"
 #include "data_structures/motion_sample.hpp"
@@ -16,10 +14,8 @@
 #include "data_structures/swerve_module_command.hpp"
 #include "data_structures/swerve_module_config.hpp"
 #include "data_structures/swerve_module_status.hpp"
-#include "data_structures/traj_point.hpp"
 #include "data_structures/trajectory.hpp"
 
-#include "event_triggers/event_trigger.hpp"
 #include "components/drive_controller.hpp"
 #include "components/drive_filter.hpp"
 #include "components/follower.hpp"
