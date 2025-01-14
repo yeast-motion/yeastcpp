@@ -15,7 +15,7 @@ namespace yeast_motion
     void Twist2D::from_json(nlohmann::json json)
     {
         this->x = json["x"];
-        this->x = json["x"];
+        this->y = json["y"];
         this->omega = json["omega"];
     }
 
@@ -26,5 +26,10 @@ namespace yeast_motion
         json["y"] = y;
         json["omega"] = omega;
         return json;
+    }
+
+    float Twist2D::norm(void) const
+    {
+        return std::sqrt(x*x + y*y);
     }
 }
