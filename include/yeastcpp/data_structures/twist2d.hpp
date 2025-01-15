@@ -17,5 +17,7 @@ namespace yeast_motion
             Twist2D(nlohmann::json json);
             void from_json(nlohmann::json json);
             nlohmann::json to_json(void);
+
+            float norm(void) const;
     };
 }
