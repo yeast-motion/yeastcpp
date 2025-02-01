@@ -12,5 +12,6 @@ namespace yeast_motion
     {
         public:
         virtual OdometrySample update (std::vector<SwerveModuleStatus> status, Rotation2D gyro_angle) = 0;
-            OdometrySample update (std::vector<SwerveModuleStatus> status, Rotation2D gyro_angle) override;
-            OdometrySample reset (OdometrySample reset_sample) override;
+        virtual OdometrySample reset (OdometrySample reset_sample) = 0;
+    };
+}
