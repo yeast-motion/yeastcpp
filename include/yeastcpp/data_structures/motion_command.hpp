@@ -18,7 +18,7 @@ namespace yeast_motion
 
             MotionCommand();
             MotionCommand(nlohmann::json json);
-            nlohmann::json to_json ();
+            nlohmann::json to_json() const;
             void from_json(nlohmann::json json);
     };
 }

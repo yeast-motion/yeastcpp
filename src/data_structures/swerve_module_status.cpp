@@ -19,7 +19,7 @@ namespace yeast_motion
         this->position = json["position"];
     }
 
-    nlohmann::json SwerveModuleStatus::to_json(void)
+    nlohmann::json SwerveModuleStatus::to_json(void) const
     {
         nlohmann::json object;
         object["speed"] = speed;

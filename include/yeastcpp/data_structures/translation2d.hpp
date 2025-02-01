@@ -13,7 +13,7 @@ namespace yeast_motion
 
             Translation2D();
             Translation2D(nlohmann::json json);
-            nlohmann::json to_json();
+            nlohmann::json to_json() const;
             void from_json(nlohmann::json json);
     };
 }

@@ -18,7 +18,7 @@ namespace yeast_motion
         this->y = json["y"];
     }
 
-    nlohmann::json Translation2D::to_json(void)
+    nlohmann::json Translation2D::to_json(void) const
     {
         nlohmann::json json;
         json["x"] = x;

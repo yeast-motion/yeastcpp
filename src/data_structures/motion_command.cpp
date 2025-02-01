@@ -21,7 +21,7 @@ namespace yeast_motion
         this->velocity.from_json(json["velocity"]);
     }
 
-    nlohmann::json MotionCommand::to_json(void)
+    nlohmann::json MotionCommand::to_json(void) const
     {
         nlohmann::json output;
         output["velocity_valid"] = this->velocity_valid;

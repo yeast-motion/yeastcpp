@@ -17,6 +17,6 @@ namespace yeast_motion
         FollowerStatus();
         FollowerStatus(nlohmann::json json);
         void from_json(nlohmann::json json);
-        nlohmann::json to_json(void);
+        nlohmann::json to_json(void) const;
     };
 }

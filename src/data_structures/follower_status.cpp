@@ -18,7 +18,8 @@ namespace yeast_motion
         this->finished = json["finished"];
     }
 
-    nlohmann::json FollowerStatus::to_json(void){
+    nlohmann::json FollowerStatus::to_json(void) const
+    {
         nlohmann::json object;
         object["passed_commands"] = this->passed_commands;
         object["finished"] = this->finished;

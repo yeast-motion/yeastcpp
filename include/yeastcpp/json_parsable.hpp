@@ -9,6 +9,6 @@ namespace yeast_motion
     {
         public:
         virtual void from_json(nlohmann::json json) = 0;
-        virtual nlohmann::json to_json() = 0;
+        virtual nlohmann::json to_json() const = 0;
     };
 }

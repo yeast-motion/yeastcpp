@@ -17,7 +17,7 @@ namespace yeast_motion
         this->translation = json["translation"];
     }
 
-    nlohmann::json SwerveModuleConfig::to_json(void)
+    nlohmann::json SwerveModuleConfig::to_json(void) const
     {
         nlohmann::json object;
         object["translation"] = this->translation.to_json();

@@ -16,7 +16,7 @@ namespace yeast_motion
             Twist2D();
             Twist2D(nlohmann::json json);
             void from_json(nlohmann::json json);
-            nlohmann::json to_json(void);
+            nlohmann::json to_json(void) const;
 
             float norm(void) const;
     };

@@ -12,7 +12,7 @@ namespace yeast_motion
             float theta = 0.0;
             Rotation2D();
             Rotation2D(nlohmann::json json);
-            nlohmann::json to_json();
+            nlohmann::json to_json() const;
             void from_json(nlohmann::json json);
     };
 }

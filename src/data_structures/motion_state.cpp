@@ -18,7 +18,7 @@ namespace yeast_motion
         this->reference.from_json(json["reference"]);
     }
 
-    nlohmann::json MotionState::to_json(void)
+    nlohmann::json MotionState::to_json(void) const
     {
         nlohmann::json object;
         object["measurement"] = measurement.to_json();

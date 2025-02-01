@@ -18,7 +18,7 @@ namespace yeast_motion
         this->theta = json["theta"];
     }
 
-    nlohmann::json SwerveModuleCommand::to_json(void)
+    nlohmann::json SwerveModuleCommand::to_json(void) const
     {
         nlohmann::json object;
         object["speed"] = speed;

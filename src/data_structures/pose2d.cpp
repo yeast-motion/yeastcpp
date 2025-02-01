@@ -18,7 +18,7 @@ namespace yeast_motion
         this->rotation.from_json(json["rotation"]);
     }
 
-    nlohmann::json Pose2D::to_json(void)
+    nlohmann::json Pose2D::to_json(void) const
     {
         nlohmann::json object;
         object["translation"] = translation.to_json();

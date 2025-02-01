@@ -19,7 +19,7 @@ namespace yeast_motion
         this->omega = json["omega"];
     }
 
-    nlohmann::json Twist2D::to_json(void)
+    nlohmann::json Twist2D::to_json(void) const
     {
         nlohmann::json json;
         json["x"] = x;

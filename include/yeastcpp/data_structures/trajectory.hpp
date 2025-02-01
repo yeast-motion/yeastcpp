@@ -23,7 +23,7 @@ namespace yeast_motion
         {
             trajectory = json;
         }
-        nlohmann::json to_json(void)
+        nlohmann::json to_json(void) const
         {
             return this->trajectory;
         }
