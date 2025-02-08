@@ -9,8 +9,6 @@
 
 namespace yeast_motion
 {
-    class OdometrySample;
-
     class AbsolutePoseEstimate : JSONParsable
     {
         public:
