@@ -7,6 +7,7 @@
 #include "data_structures/translation2d.hpp"
 
 #include "data_structures/follower_status.hpp"
+#include "data_structures/absolute_pose_estimate.hpp"
 #include "data_structures/motion_command.hpp"
 #include "data_structures/motion_sample.hpp"
 #include "data_structures/motion_state.hpp"
