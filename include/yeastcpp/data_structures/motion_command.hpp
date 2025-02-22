@@ -4,6 +4,7 @@
 #include <nlohmann/json.hpp>
 
 #include "yeastcpp/data_structures/twist2d.hpp"
+#include "yeastcpp/data_structures/translation2d.hpp"
 #include "yeastcpp/json_parsable.hpp"
 
 namespace yeast_motion
@@ -15,6 +16,8 @@ namespace yeast_motion
             Twist2D velocity;
             bool acceleration_valid;
             Twist2D acceleration;
+            bool translation_valid;
+            Translation2D translation;
 
             MotionCommand();
             MotionCommand(nlohmann::json json);

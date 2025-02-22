@@ -19,6 +19,8 @@ namespace yeast_motion
         this->acceleration_valid = json["acceleration_valid"];
         this->acceleration.from_json(json["acceleration"]);
         this->velocity.from_json(json["velocity"]);
+        this->translation_valid = json["translation_valid"];
+        this->translation.from_json(json["translation"]);
     }
 
     nlohmann::json MotionCommand::to_json(void) const
@@ -28,6 +30,8 @@ namespace yeast_motion
         output["acceleration_valid"] = this->acceleration_valid;
         output["acceleration"] = this->acceleration.to_json();
         output["velocity"] = this->velocity.to_json();
+        output["translation_valid"] = this->translation_valid;
+        output["translation"] = this->translation.to_json();
         return output;
     }
 }
