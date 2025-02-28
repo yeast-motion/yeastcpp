@@ -13,6 +13,7 @@ namespace yeast_motion
         public:
         std::vector<std::string> passed_commands;
         bool finished = false;
+        int32_t sync_number = -1;
 
         FollowerStatus();
         FollowerStatus(nlohmann::json json);
