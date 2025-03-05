@@ -13,6 +13,7 @@ namespace yeast_motion
     {
         public:
         virtual OdometrySample update (std::vector<SwerveModuleStatus> status, Rotation2D gyro_angle) = 0;
+        virtual OdometrySample get() = 0;
         virtual OdometrySample reset (OdometrySample reset_sample) = 0;
         virtual void provide_absolute_position_estimate (AbsolutePoseEstimate estimate) = 0;
     };
