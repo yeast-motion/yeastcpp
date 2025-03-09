@@ -13,7 +13,7 @@ namespace yeast_motion
     class Follower
     {
         public:
-        virtual void begin(Trajectory trajectory, MotionState initial_state = MotionState()) = 0;
+        virtual void begin(Trajectory trajectory, MotionState initial_state = MotionState(), bool flipped = false) = 0;
 
         virtual MotionCommand follow(MotionState motion_state) = 0;
         virtual FollowerStatus status() = 0;
