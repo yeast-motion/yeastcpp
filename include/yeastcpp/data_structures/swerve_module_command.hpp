@@ -10,6 +10,7 @@ namespace yeast_motion
     {
         public:
         float speed = 0.0;
+        float accel = 0.0;
         float theta = 0.0;
 
         SwerveModuleCommand();
