@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <iostream>
 
 #include "yeastcpp/data_structures/rotation2d.hpp"
@@ -16,5 +17,6 @@ namespace yeast_motion
         virtual OdometrySample get() = 0;
         virtual OdometrySample reset (OdometrySample reset_sample) = 0;
         virtual void provide_absolute_position_estimate (AbsolutePoseEstimate estimate) = 0;
+        virtual void provide_absolute_position_estimate (AbsolutePoseEstimate estimate, std::array<double, 3> std_devs) = 0;
     };
 }
